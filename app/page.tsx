@@ -7,14 +7,6 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-export default function Home() {
-  return (
-    <main>
-      <h1>LVC Assistance</h1>
-    </main>
-  );
-}
-
 // Hàm tự động xác định Rank dựa trên XP hiện tại
 const getRankTier = (currentXP: number) => {
   if (currentXP >= 3000) return { tier: "Kim Cương III", badge: "💎", nextXP: 3500 };
@@ -25,7 +17,7 @@ const getRankTier = (currentXP: number) => {
 
 const classMockData = {
   userProfile: {
-    fullName: "Nguyễn Tiểu Minh ",
+    fullName: "Nguyễn Đại Minh",
     class: "12 Tin",
     currentXP: 2450,
     streakDays: 12,
