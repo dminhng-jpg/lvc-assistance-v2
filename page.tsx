@@ -7,6 +7,14 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
+export default function Home() {
+  return (
+    <main>
+      <h1>LVC Assistance</h1>
+    </main>
+  );
+}
+
 // Hàm tự động xác định Rank dựa trên XP hiện tại
 const getRankTier = (currentXP: number) => {
   if (currentXP >= 3000) return { tier: "Kim Cương III", badge: "💎", nextXP: 3500 };
