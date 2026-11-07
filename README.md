@@ -45,7 +45,8 @@ Mở trình duyệt và truy cập: `http://localhost:3000`
 ---
 Tác Giả & Đóng Góp
 Phát triển bởi: Nguyễn Đại Minh — Học sinh lớp 12 Tin - NK: 2024-2027 , THPT Chuyên Lương Văn Chánh.
-		   Huỳnh Võ Thành Tính - Học sinh lớp 12 Tin - NK: 2024-2027, THPT Chuyên Lương Văn Chánh.
+		        Nguyễn Hải Đăng - Học sinh lớp 12 Sinh - NK: 2024-2027, THPT Chuyên Lương Văn Chánh.
+				Phạm Minh Vũ - Học sinh lớp 11 Văn - NK: 2025 - 20258,  THPT Chuyên Lương Văn Chánh. 
 Mục đích: Dự án học tập & hỗ trợ thi đua lớp học.
 ---
 This project was made with love for Luong Van Chanh Highschool For The Gifted <3
