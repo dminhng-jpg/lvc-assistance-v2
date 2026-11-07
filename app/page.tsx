@@ -5,8 +5,7 @@ import confetti from 'canvas-confetti';
 
 // Hàm tự động xác định Rank dựa trên XP hiện tại
 const getRankTier = (currentXP: number) => {
-  if (currentXP >= 3500) return { tỉer: "CAO THỦ VÕ LÂM", nextXP 4000 };
-  if (currentXP >= 3000) return { tier: "Đại Cao ", nextXP: 3500 };
+  if (currentXP >= 3000) return { tier: "Kim Cương III", nextXP: 3500 };
   if (currentXP >= 2580) return { tier: "Kim Cương II", nextXP: 3000 };
   if (currentXP >= 2000) return { tier: "Kim Cương I", nextXP: 2580 };
   return { tier: "Bạch Kim III", nextXP: 2000 };
@@ -47,8 +46,8 @@ const classMockData = {
     { id: 2, subject: "Hóa Học", title: "Củng cố Lý thuyết Lipid", desc: "Tóm tắt sơ đồ tư duy tổng quát kiến thức.", xp: 300, isCompleted: false }
   ],
   classLeaderboard: [
-    { name: "Nguyễn Hải Đăng", xp: 2570, tier: "Kim Cương I", isUser: false },
-    { name: "Phạm Minh Vũ", xp: 2100, tier: "Kim Cương I", isUser: false },
+    { name: "Minh Vũ Bá Khi Nhất LVC", xp: 2570, tier: "Kim Cương I", isUser: false },
+    { name: "Nguyễn Hải Đăng Buồn Ngủ", xp: 2100, tier: "Kim Cương I", isUser: false },
     { name: "Trần Nguyễn Hải Đan", xp: 1850, tier: "Bạch Kim III", isUser: false },
     { name: "Trần Gia Hân", xp: 1600, tier: "Vàng I", isUser: false }
   ],
@@ -467,6 +466,9 @@ export default function ClassDashboard() {
   );
 }
 
+// ----------------------------------------------------------------------
+// COMPONENT GIA SƯ AI SOCRATIC THÔNG MINH
+// ----------------------------------------------------------------------
 function AITutorModal({ 
   subject, 
   onClose,
