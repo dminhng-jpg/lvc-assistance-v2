@@ -466,9 +466,6 @@ export default function ClassDashboard() {
   );
 }
 
-// ----------------------------------------------------------------------
-// COMPONENT GIA SƯ AI SOCRATIC THÔNG MINH
-// ----------------------------------------------------------------------
 function AITutorModal({ 
   subject, 
   onClose,
