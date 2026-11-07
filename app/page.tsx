@@ -482,7 +482,7 @@ function AITutorModal({
   const [messages, setMessages] = useState<Array<{ sender: 'user' | 'ai'; text: string }>>([
     { 
       sender: 'ai', 
-      text: `Chào Neville! Mình là Gia sư AI môn ${subject}. Mình sẽ hỗ trợ gợi mở tư duy và hướng dẫn từng bước chứ không giải hộ bài. Bạn đang gặp vướng mắc ở bài toán nào?` 
+      text: `Chào Đại Minh! Mình là Gia sư AI môn ${subject}. Mình sẽ hỗ trợ gợi mở tư duy và hướng dẫn từng bước chứ không giải hộ bài. Bạn đang gặp vướng mắc ở bài toán nào?` 
     }
   ]);
   const [loading, setLoading] = useState(false);
