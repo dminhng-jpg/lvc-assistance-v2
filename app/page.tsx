@@ -310,7 +310,7 @@ export default function ClassDashboard() {
                             onClick={() => setActiveTutorSubject(item.subject)}
                             className="text-[11px] bg-blue-50 text-[#0066FF] hover:bg-blue-100 border border-blue-200 px-2 py-0.5 rounded font-medium transition"
                           >
-                            Hỏi Gia sư {item.subject} AI
+                            Hỏi Gia sư SEABOT về {item.subject} 
                           </button>
                         </div>
                       </td>
@@ -482,7 +482,7 @@ function AITutorModal({
   const [messages, setMessages] = useState<Array<{ sender: 'user' | 'ai'; text: string }>>([
     { 
       sender: 'ai', 
-      text: `Chào Đại Minh! Mình là Gia sư AI môn ${subject}. Mình sẽ hỗ trợ gợi mở tư duy và hướng dẫn từng bước chứ không giải hộ bài. Bạn đang gặp vướng mắc ở bài toán nào?` 
+      text: `Chào Đại Minh! Mình là SEABOT - Trợ Lý Học Tập Thông Minh . Mình sẽ hỗ trợ gợi mở tư duy và hướng dẫn từng bước chứ không giải hộ bài. Bạn đang gặp vướng mắc ở bài toán nào?` 
     }
   ]);
   const [loading, setLoading] = useState(false);
@@ -537,7 +537,7 @@ function AITutorModal({
         {/* Header Modal */}
         <div className="bg-white border-b border-slate-200 p-4 flex justify-between items-center">
           <div>
-            <h3 className="text-sm font-bold text-slate-900">Gia sư AI Học tập — Môn {subject}</h3>
+            <h3 className="text-sm font-bold text-slate-900">SEABOT - Trợ Lý Học Tập Thông Minh </h3>
             <p className="text-[11px] text-slate-500">Phương pháp Socratic: Hướng dẫn & Gợi mở tư duy</p>
           </div>
           <button onClick={onClose} className="text-slate-400 hover:text-slate-700 text-sm font-bold px-2 py-1">
@@ -561,7 +561,7 @@ function AITutorModal({
           {loading && (
             <div className="flex justify-start">
               <div className="bg-white border border-slate-200 text-slate-500 p-2.5 rounded-lg text-xs italic">
-                Gia sư AI đang soạn câu hỏi gợi ý...
+               SEABOT đang soạn câu hỏi gợi ý...
               </div>
             </div>
           )}
@@ -598,7 +598,7 @@ function AITutorModal({
         <form onSubmit={(e) => handleSend(e)} className="p-3 bg-white border-t border-slate-200 flex gap-2">
           <input 
             type="text" 
-            placeholder={`Trả lời hoặc hỏi Gia sư ${subject}...`}
+            placeholder={`Trả lời hoặc hỏi SEABOT`}
             value={input}
             onChange={(e) => setInput(e.target.value)}
             className="flex-1 bg-slate-50 border border-slate-200 text-xs text-slate-800 rounded px-3 py-2 focus:outline-none focus:border-[#0066FF]"
